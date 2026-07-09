@@ -1,10 +1,10 @@
-pipeline {
+ppipeline {
     agent any
 
     stages {
-        stage('deploye Html Registration Form') {
+        stage('Hello') {
             steps {
-                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, icon: '', keepAll: false, reportDir: '', reportFiles: 'registration form.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
+                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, icon: '', keepAll: false, reportDir: '', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
             }
         }
     }
